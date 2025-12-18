@@ -50,3 +50,24 @@ body {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+
+.social-icon::after {
+  bottom: auto;
+  top: -38px;
+}
+
+.social-icon::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #fff;
+  opacity: 0;
+}
+
+.social-icon:hover::before {
+  opacity: 1;
+}
+
